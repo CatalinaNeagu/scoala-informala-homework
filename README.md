@@ -1,1 +1,1 @@
-# scoala-informala-homework
+This is the repository where all my projects will be available.
