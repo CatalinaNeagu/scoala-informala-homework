@@ -13,7 +13,6 @@ import static ro.siit.LocalStore.StockItem.stockList;
 public class Store {
 
     //Adding a product
-
     static int id = 4;
     public static void addProduct() {
         id++;
@@ -61,7 +60,7 @@ public class Store {
                 int storageTemp = Integer.parseInt(sc.next());
 
                 //Defining the product and adding it in productList
-                Animal p5 = new Animal(id, verif , price, weight, storageTemp, quantity);
+                Product p5 = new Animal(id, verif , price, weight, storageTemp, quantity);
                 productList.add(p5);
                 break;
             case "2":
