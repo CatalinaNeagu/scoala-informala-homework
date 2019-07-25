@@ -1,7 +1,7 @@
 package ro.siit.LocalStore;
 
 public class Animal extends Product {
-    public int storageTemp;
+    private int storageTemp;
 
     public Animal(int id, String productName, double price, int weight, int storageTemp, int quantity) {
         super(id, productName, price, weight, quantity);
