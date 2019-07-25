@@ -13,7 +13,6 @@ import static ro.siit.LocalStore.StockItem.stockList;
 public class Store {
 
     //Adding a product
-
     static int id = 4;
     public static void addProduct() {
         id++;
