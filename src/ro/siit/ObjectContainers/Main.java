@@ -18,7 +18,7 @@ public class Main {
         for (Person p : personComp) {
             System.out.println(p);
         }
-        System.out.println("===========================");
+
         //By using age comparator (int comparison)
         TreeSet<Person> ageComp = new TreeSet<Person>(new MyAgeComp());
         ageComp.add(p1);
