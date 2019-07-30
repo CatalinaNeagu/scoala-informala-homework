@@ -2,6 +2,13 @@ package ro.siit.ObjectContainers;
 
 import java.util.*;
 
+/**
+ * This code will store some persons in a TreeSet. After that, it will iterate through the TreeSet using 2 Comporators.
+ * For one person, it will display their hobbies using a HashMap.
+ * @author Catalina Neagu
+ */
+
+
 public class Main {
     public static void main(String[] args) {
         Person p1 = new Person("Ion", 10);
@@ -9,7 +16,7 @@ public class Main {
         Person p3 = new Person("Alexandra", 20);
         Person p4 = new Person("Toma", 25);
 
-        //By using name comparator (String comparison)
+        //Iterate through the TreeSet using name comparator (String comparison)
         TreeSet<Person> personComp = new TreeSet<Person>(new MyNameComp());
         personComp.add(p1);
         personComp.add(p2);
@@ -19,7 +26,7 @@ public class Main {
             System.out.println(p);
         }
 
-        //By using age comparator (int comparison)
+        //Iterate through the TreeSet using age comparator (int comparison)
         TreeSet<Person> ageComp = new TreeSet<Person>(new MyAgeComp());
         ageComp.add(p1);
         ageComp.add(p2);
@@ -28,6 +35,8 @@ public class Main {
         for (Person p : ageComp) {
             System.out.println(p);
         }
+
+        //Defining a HashMap
         HashMap<Person, List<Hobby>> hobbyPerson = new HashMap<Person, List<Hobby>>();
 
         //Defining 2 lists with addresses
@@ -50,8 +59,7 @@ public class Main {
         System.out.println(hobbyPerson);
 
     }
-
-        static class MyNameComp implements Comparator<Person>{
+    static class MyNameComp implements Comparator<Person>{
 
         @Override
         public int compare(Person p1, Person p2) {
