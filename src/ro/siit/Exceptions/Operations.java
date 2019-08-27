@@ -67,7 +67,7 @@ public class Operations {
         if (checkingcnp == null || checkingcnp.isEmpty()) {
             throw new IllegalArgumentException("CNP should not be empty");
         }
-        
+
         boolean a = true;
         for (int i = 0; i < studentList.size(); i++) {
             if (checkingcnp.equals(studentList.get(i).getCnp())) {
